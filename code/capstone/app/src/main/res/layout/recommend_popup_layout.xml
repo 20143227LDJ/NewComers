@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0E6DD5FA"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="\n도움말"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:paddingBottom="15dp"
+        android:fontFamily="@font/bung"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marker_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="바닷가"
+            android:textColor="#000000"
+            android:fontFamily="@font/bung"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marker_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="문화, 역사"
+            android:textColor="#000000"
+            android:fontFamily="@font/bung"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marker_green" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="산책로"
+            android:textColor="#000000"
+            android:fontFamily="@font/bung"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#00ff0000"
+            android:gravity="center"
+            android:text="확 인"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            style="?android:borderlessButtonStyle"
+            android:fontFamily="@font/bung"/>
+    </LinearLayout>
+
+
+</LinearLayout>

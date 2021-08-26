@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E6DD5FA">
+
+    <Button
+        android:id="@+id/del_back"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="뒤로가기"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:fontFamily="@font/bung"
+        style="?android:borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ListView
+        android:id="@+id/delete_listview"
+        android:layout_width="411dp"
+        android:layout_height="526dp"
+        android:clickable="true"
+        android:fontFamily="@font/yang"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

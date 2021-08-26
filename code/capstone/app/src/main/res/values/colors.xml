@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FAFAFA</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="appbar">#f2bcf8</color>
+    <color name="purple">#e98df5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FB8C00</color>
+    <color name="test_orange">#FE9A2E</color>
+    <color name="light_blue">#CCFFFF</color>
+    <color name="light_blue2">#66FFFF</color>
+    <color name="light_blue3">#222FFF</color>
+    <color name="black">#080808</color>
+    <color name="light_gray">#EEEEEE</color>
+</resources>

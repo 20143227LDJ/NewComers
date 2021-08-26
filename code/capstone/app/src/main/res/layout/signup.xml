@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#0E6DD5FA">
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bung"
+        android:text="환영해요!"
+        android:textColor="@color/light_blue3"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  이름"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <EditText
+        android:id="@+id/signup_phone"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  전화번호"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/bung"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_name"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/signup_pass"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  비밀번호"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_phone"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/signup_address"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  주소"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_pass"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  이메일"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_address"
+        app:layout_constraintVertical_bias="0.105"
+        android:fontFamily="@font/bung"/>
+
+    <Button
+        android:id="@+id/signup_signup"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="회원가입"
+        android:textSize="25dp"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946"
+        style="?android:borderlessButtonStyle"/>
+
+    <RadioGroup
+        android:id="@+id/radio_button_group"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/light_blue3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789">
+
+        <RadioButton
+            android:id="@+id/sex_man"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bung"
+            android:textSize="20dp"
+            android:text="남" />
+
+        <RadioButton
+            android:id="@+id/sex_woman"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/bung"
+            android:textSize="20dp"
+            android:text="여" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

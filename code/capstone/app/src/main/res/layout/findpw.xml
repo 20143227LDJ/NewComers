@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#0E6DD5FA">
+
+    <TextView
+        android:id="@+id/findpw_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호를 잊으셨나요?"
+        android:fontFamily="@font/bung"
+        android:textColor="@color/light_blue3"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <EditText
+        android:id="@+id/findpw_phone"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  전화번호"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findpw_name"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/findpw_name"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button_background"
+        android:ems="10"
+        android:hint="  이름"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/bung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <Button
+        android:id="@+id/findpw_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:fontFamily="@font/bung"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findpw_phone"
+        app:layout_constraintVertical_bias="0.225"
+        style="?android:borderlessButtonStyle"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="158dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/findpw_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
